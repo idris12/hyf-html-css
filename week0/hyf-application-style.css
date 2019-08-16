@@ -1,0 +1,482 @@
+
+body {
+  margin:0;
+  padding:0;
+  height:100%;  
+  background-color:#f4976c;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*logo, quote and navigation starts here*/
+
+header img{
+  width:15%;
+  display:block;
+  padding:0.5em 0 0 0;
+  margin:0 auto;
+}
+
+#logo{
+  margin-top:1em;
+  margin:1em auto;
+  width:75%;
+  height:auto;
+  /* border-bottom:0.2em solid #303c6c; */
+}
+#logo p{
+  text-align:center;
+  font-size:1.2em;  
+  line-height:1.5em;
+  color:#303c6c;
+  width:100%;
+  height:4em;
+  margin-bottom:0;
+  letter-spacing:0.05em;
+}
+
+/*navigation menu*/
+nav{
+  width:100%;
+}
+nav a{
+  padding:0.5em;
+  color:#fbe8a6; 
+  text-decoration:none;
+  letter-spacing:0.05em;
+}
+
+/*at first I used float:left for list items but I found out that it might cause problems for elements surrounding it and it is better to use display:inline-block to have the desired result*/
+nav li{
+  display:inline-block;
+  list-style-type:none;
+  padding:0.6%;
+  margin:0.4em 1.3em;
+  font-size:1.5em;
+  background-color:#303c6c;
+  -webkit-box-shadow:0.2em 0.2em rgba(48, 60, 108, 0.5);
+  box-shadow:0.2em 0.2em rgba(48, 60, 108, 0.5);
+}
+
+nav ul{
+  margin:0 auto;
+  text-align:center;
+  width:100%;
+  height:4em;
+  padding-left:0;
+}
+
+nav a:hover{
+  color:#f4976c;  
+}
+nav ul li:hover{
+    transform:scale(1.1);
+}
+
+
+
+/*Content starts here*/
+main{
+  width:100%;
+  height:100%;;
+  color:#303c6c;
+  margin-top:0;  
+}
+h2, h1{
+  margin:2% 0 0 0;
+  text-align:center;
+  padding:1%;
+  color:#fbe8a6; 
+  text-shadow:0.05em 0.05em #303c6c;
+  letter-spacing:0.025em
+}
+h1{
+  font-size:2em;
+}
+
+ol{
+  text-align:center;
+  list-style-position:inside;
+  margin-bottom:2em;
+  font-size:1.2em;
+}
+.mediacenter{
+ display:block;
+ margin:2em auto; 
+}
+.egyptiancat{
+  width:20%;
+}
+/*first part of written content*/
+#description p {
+  margin:0 10% 2% 10%;
+  padding:0 3%;
+  font-size:1.5em;
+  text-indent:1em;
+}
+#description ol{
+  font-size:1.5em;
+}
+
+/*flexbox*/
+.flexcontainer{
+  background-color:gray;
+  width:80%;
+  height:17em;
+  display:-webkit-box;
+  display:-webkit-flex; 
+  display:flex;  
+  display:-ms-flexbox;
+  display:flex;
+  margin:0 auto;
+}
+
+.flex{
+  -webkit-box-flex:1;
+  -ms-flex:1;
+  -webkit-flex: 1; 
+  flex:1;
+  color:#303c6c;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flex p{
+  font-size:1em;
+  padding:0.5em;
+  text-align:center;
+  margin:5% 1%;
+  
+}
+.persian{
+  background-color:#c8e0ec;
+  background-image:url("https://res.cloudinary.com/teepublic/image/private/s--YiuNA6vJ--/t_Preview/b_rgb:c8e0ec,c_limit,f_jpg,h_630,q_90,w_630/v1536579374/production/designs/3134512_0.jpg");
+  background-size:contain;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.somali{
+  background-color:#fbe8a6;
+  background-image:url("https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/a/a7/1fc366673ac204163cdbd19e237a1667.jpg.png/revision/latest?cb=20180112221109");
+  background-size:contain;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+   
+.bshorthair{
+  background-color:#f3eddf;
+  background-image:url("https://i.pinimg.com/originals/b7/1b/dd/b71bdda85fd3dad0aa4dad1474875f1b.jpg")
+;
+  background-position:center center;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+.sphynx{
+  background-color:pink;
+  background-image:url("https://s3.envato.com/files/209626871/Sphynx%20Cat%20%204.png");
+  background-position:center center;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+.ankara{
+  background-color:#e7cac7;
+  background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/6b68e375-7f1b-4bd5-881f-0db14b811feb/dcuv83v-54861537-d983-4eb9-9c74-f9bd952578bb.png");
+  background-size:contain;
+  background-position:center center;
+  background-repeat:no-repeat;
+  
+}
+.scottish{
+  background-color:white;
+  background-image:url("https://i.pinimg.com/originals/19/4c/9b/194c9bde4d2da8321db5d7b5639e78cf.jpg");
+  background-size:contain;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.abobtail{
+  background-color:#fab86c;
+  background-image:url("https://images.vexels.com/media/users/3/154233/isolated/preview/8e39d68e0ecbaeeb360080cc8e8dd7dc-american-bobtail-cat-geometric-illustration-by-vexels.png");
+  background-size:contain;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.exotic{
+  background-color:#b4dfe5;
+  background-image:url("https://images.vexels.com/media/users/3/154487/isolated/preview/1c1f4972e5cc527a44abf3ee4ba72f5b-exotic-shorthair-cat-illustration-by-vexels.png");
+  background-size:contain;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+.hovertext{
+  opacity:0;
+  height:17em;
+  overflow:hidden;
+}
+.hovertext:hover{
+  opacity:1;
+  cursor: default;
+}
+.flex:hover{
+  -webkit-box-flex:4;
+  -ms-flex:4;
+  -webkit-flex: 4; 
+  flex:4;
+  background-image:initial;
+}
+.flex span{
+ font-weight:bold;
+ background-color:#303c6c;
+ color:#f4976c;
+ padding:0.1em 0.5em;
+}
+
+/*second part of written content*/
+
+#history-and-further p{
+  margin:0 10% 3% 10%;
+  padding:0 3%;
+  font-size:1.5em;
+  text-indent:1em;
+}
+/*table of fictional cats*/
+table{
+  width:70%;
+  height:auto;
+  margin:2em auto;
+  border-collapse:separate;
+  border-spacing:0.4em;
+}
+
+td{
+  padding:1em;
+  background-color:#303c6c;
+  border-style:solid;
+  border-width:thin;
+  color:#fbe8a6;
+}
+
+th{
+  background-color:#fbe8a6;
+  padding:1em;
+  border-style:solid;
+  color:#303c6c;
+  font-variant:small-caps;
+  font-size:1.2em
+}
+/*Links to further info on cats*/
+#furtherlinks{
+ text-align:center;
+}
+#furtherlinks i:hover{
+  color:#303c6c;
+  transform:scale(1.3);
+}
+/*Content ends*/
+
+#backtotop{
+  position:-webkit-sticky;
+  position:sticky;
+  bottom:1%;
+  text-align:right;
+  padding:0.5%;
+ 
+}
+#backtotop a{
+  text-decoration:none;
+  text-shadow: 0.05em 0.05em #303c6c;
+  color:#fbe8a6;
+  /*text-shadow: 0.1em 0 0 #303c6c, -0.1em 0 0 #303c6c, 0 0.1em 0 #303c6c, 0 -0.1em 0 #303c6c, 0.05em 0.05em #303c6c, -0.05em -0.05em 0 #303c6c, 0.05em -0.05em 0 #303c6c, -0.05em 0.05em 0 #303c6c;*/
+  padding:0.2em;
+
+}
+#backtotop a:hover{
+  background-color:#303c6c;
+  border-style:solid;
+  border-width:thin;
+  border-color:#fbe8a6;
+}
+
+/*Footer starts here*/
+
+footer{
+  width:100%;
+  height:auto;
+  background-color:#303c6c;
+  color:#fbe8a6;
+  margin-bottom:0;
+}
+
+/* link of websites I used to get information from*/
+#sources{
+  width:40%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+#sources ul{
+  padding-left:0;
+}
+#sources p{
+  padding:0.5em;
+  font-size:1.5em;
+  margin:0;
+}
+
+#sources ul li{
+  display:inline-block;
+  padding:0 1em;
+  list-style-type:none;
+}
+#sources a{
+  color:#fbe8a6;
+}
+#sources a:hover{
+  color:#f4976c;
+}
+#sources ul li a{
+  text-decoration:none;
+  font-size:1em;
+}
+
+/*my social media accounts and contact info*/
+i{
+  font-size:2.8em;
+  color:#fbe8a6;
+  padding:0.4em;
+}
+#contactme{
+  text-align:center;
+  padding-top:0.1em;
+}
+
+#contactme p{
+  margin:0;
+  font-size:1em;
+  color:#fbe8a6;
+  line-height:1.5em;
+}
+#contactme i:hover{
+  color:#f4976c;
+  transform:scale(1.3);
+}
+
+
+
+/*mobile design*/
+
+@media screen and (max-width: 800px){
+  #backtotop a{
+    font-size:0.85em;
+   }
+  
+  /*logo, quote and navigation*/
+   header img{
+    top:15%;
+    width:25%;
+    padding-right:10%;
+    margin:10% auto 5% auto;
+   }
+   #logo p{
+    width:40%;
+    height:5em;
+    padding:2em;
+    font-size:1em;
+    font-size:95%;
+    margin:10% auto 0 auto;
+   }
+  
+  /*I had trouble having the elements inside logo aligned horizontally and vertically, when I looked up for that on the web, I came across an article suggesting using display:flex, and tried that here, I don't know if it's a clean way to code, but it worked for me.*/
+  
+   #logo{
+   -webkit-display: flex;
+   -moz-display: flex;
+   -ms-display: flex;
+    display:flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    -webkit-flex-direction:row-reverse;
+    -ms-flex-direction:row-reverse;
+    flex-direction:row-reverse;
+    width:100%;
+    height:auto;
+    border:none;
+   }
+  
+   nav ul{  
+    text-align:center;
+    height:20%;
+    margin-right:auto;
+    margin-left:auto;
+    padding-left:0;
+   }
+   nav li{
+    font-size:1em;
+    display:inline-block;
+    float:none;    
+   }
+  
+
+  /*Content starts here*/
+   main{
+     /*overflow:scroll;*/
+   }
+   main p{
+    font-size:1em;
+    text-indent:1em;
+   }
+   #description p{
+    margin:0 5% 2% 5%;
+    padding:0 1%;
+   }
+   #description ol{
+    font-size:1em;
+    text-align:left;
+   }
+   iframe{
+    width:90%;
+   }
+  /*flexbox*/
+   .flexcontainer{
+    text-align:center;
+    height:auto;
+    width:100%;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+   }
+   .flex{
+    height:10em;
+    background-position:center center;
+   }
+   .flex p{
+    padding:0.5em;
+    font-size:1em;
+    margin: 0 auto;
+   }
+   .flex:hover{
+    font-size:1em;  
+   }
+   .flex p:hover{
+   }
+   #history-and-further p{
+    margin:0 5% 2% 5%;
+    padding:0 1%;
+   }
+  
+  /*table*/
+  
+  
+  
+  /*footer*/
+   footer{
+    width:100%;
+    height:auto;
+   }
+   #sources {
+    width:100%;
+   }
+   #sources ul{
+   }
+  
+}
