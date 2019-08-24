@@ -8,7 +8,7 @@ attrib +h "folder_name"
 
 To display it in CLI, I tried a lot of stuff like dir/a:hd but what I searched on internet didn't work on Powershell, there were possible parameters in the error message
 so I tried:
-ls - Hidden  and it worked.
+ls - Hidden and ls -h  and it worked.
 
 
 2.How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
