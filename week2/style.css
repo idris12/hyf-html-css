@@ -17,12 +17,10 @@ h1{
     font-size:4em;
     font-family: myfont;  
     padding: 2%;
+    text-shadow: 5px 5px #F19A3E;
 }
 h1::before{
     content: "§";
-}
-h1:hover{
-    text-shadow: 5px 5px #F19A3E
 }
 h2{
     padding:5%;
