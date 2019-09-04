@@ -215,7 +215,7 @@ section{
     }
     #grid-flex .grid-item{
         padding: 1%;
-        width: 44%;
+        width: 42%;
     }
     #grid-flex .grid-item:nth-child(1){
         width: 95%;
