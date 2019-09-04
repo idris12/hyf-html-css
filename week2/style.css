@@ -7,53 +7,44 @@ body{
     height: 100%;
     font-family: myfont2;
 }
-
 main{
     width: 95%;
     margin:auto;
 }
-
 h1{
     text-align: center;
     font-size:4em;
-    font-family: myfont;    
+    font-family: myfont;
+    padding:2%;	
 }
-
 h1::before{
     content: "§";
 }
-
 h2{
-    padding:5%;
+    padding:3%;
     text-align: center;
     font-family: myfont;
 }
-
 h3{
     text-align: center;
 }
-
 @font-face{
     font-family: myfont;
     src: url(PaperCutRegular.otf);
 }
-
 @font-face{
     font-family: myfont2;
     src: url(Underdog-Regular.ttf);
 }
-
 ::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.404);
 	border-radius: 0.75em;
     background-color: #FFFFFF;
 }
-
 ::-webkit-scrollbar{
 	width: 1em;
 	background-color: #FFFFFF;
 }
-
 ::-webkit-scrollbar-thumb{
 	border-radius: 0.75em;
 	-webkit-box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.37);
@@ -62,8 +53,7 @@ h3{
 .grid-item:hover{
     animation:wiggle 0.75s;
 }
-
-  @keyframes wiggle {
+   @keyframes wiggle {
     0% {transform: translate(1px, 1px) rotate(0deg);}
     10% {transform: translate(-1px, -2px) rotate(-1deg);}
     20% {transform: translate(0px, 1px) rotate(1deg);}
@@ -97,7 +87,6 @@ h3{
     border: 0.25em dashed #98D9C2;
     padding: 0.5em;
 }
-
 #grid-floats .grid-item:nth-child(3), 
 #grid-floats .grid-item:nth-child(5), 
 #grid-floats .grid-item:nth-child(7),
@@ -128,7 +117,6 @@ h3{
      background-color: #403233;
      color: #FFFFFF;
 }
-
 #grid-floats img{
     width: 50%;
     display: block;
@@ -141,7 +129,6 @@ h3{
 section{
     clear: both;
 }
-
 /* Grid with flexbox */
 #grid-flex{
     display: flex;
@@ -177,7 +164,6 @@ section{
 #grid-flex .grid-item:nth-child(14){
     background-color: #FFFFFF;
 }
-
 #grid-flex .grid-item:nth-child(2){
     background-color: #403233;
     color: #FFFFFF;
@@ -199,7 +185,6 @@ section{
      background-color: #403233;
      color: #FFFFFF;
 }
-
 #grid-flex img{
     width: 50%;
 }
